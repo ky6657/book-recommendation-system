@@ -1,0 +1,51 @@
+/* 全局样式 */
+body {
+    background-color: #f8f9fa;
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    color: #333;
+}
+
+/* 卡片悬浮效果 */
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 按钮样式优化 */
+.btn {
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+/* 输入框样式 */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* 页脚样式 */
+footer {
+    margin-top: 50px !important;
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+    .row-cols-md-2.row-cols-lg-3 {
+        row-cols: 1 !important;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
